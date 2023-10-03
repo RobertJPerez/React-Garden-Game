@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    border: 1px solid black;
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+}
+.propcontainer {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    float: none;
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    flex: auto;
+}
+
+.plant_list {
+    position: absolute;
+    right: 0;
+}
+/* This is what will hold a plant's description (when user hovers over a plant)*/
+.Plant-describer {
+    height: auto;
+    width: auto;
+    padding: 30px;
+    border: 15px solid green;
+    margin: auto;
+}
+.Plant-header {
+    text-align: center;
+}
+.Plant-attribute {
+    text-align: left;
+}
+
+.Plant {
+    height: 300px;
+    width: 300px;
+    padding: 30 px;
+    border: 10px solid green;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #222;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    margin: 0 50px;
+}
+
+.react-draggable,
+.cursor {
+    cursor: move;
+}
+.no-cursor {
+    cursor: auto;
+}
+.cursor-y {
+    cursor: ns-resize;
+}
+.cursor-x {
+    cursor: ew-resize;
+}
+
+.react-draggable strong {
+    background: #ddd;
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.box {
+    flex: auto;
+    border: 1px dashed #999;
+    border-radius: 3px;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+/*
+ * RemWrapper needs to take it's styles from this element,
+ * and this element can't have an absolute position after it's kicked in.
+ * AFAIK it's not possible to do this directly in the RemWrapper component.
+ */
+.rem-position-fix {
+    position: static !important;
+}
+
+.borderboxup {
+    height: 130px;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 380px;
+}
+
+.borderboxdown {
+    height: 200px;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 380px;
+    padding-top: 10px;
+}
+
+.borderboxleft {
+    height: 800px;
+    width: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.orienttextvertical {
+    width: 500px;
+    height: 50px;
+    transform: rotate(-90deg);
+    margin: auto;
+}
+
+.orienttextverticalright {
+    width: 500px;
+    height: 50px;
+    transform: rotate(90deg);
+    margin: auto;
+}
+
+.proplistcontainer {
+    display: flex;
+    align-self: flex-end;
+}
